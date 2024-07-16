@@ -11,6 +11,11 @@ nav:
       - C64:
           - blog/C64intro.md
           - blog/C64ASMCLS.md
+  - Documents:
+      - manuals/index.md
+      - manuals/SS5.md
+
+
 #      - subtopic:
 #          - blog/subtopic/boring_post.md
 #          - blog/subtopic/interesting_post.md
