@@ -1,0 +1,32 @@
+site_name: BitMad
+theme:
+  name: material
+  features:
+    - navigation.expand
+copyright: Copyright &copy; 2024 BitMad
+
+nav:
+  - Home: index.md
+  - Articles:
+      - C64:
+          - blog/C64intro.md
+          - blog/C64ASMCLS.md
+#      - subtopic:
+#          - blog/subtopic/boring_post.md
+#          - blog/subtopic/interesting_post.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/BitMadcouk
+    - icon: fontawesome/solid/envelope
+      link: mailto:bitmad@bitmad.co.uk
+
+
+
+
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
