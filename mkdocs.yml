@@ -25,7 +25,9 @@ extra:
       link: https://github.com/BitMadcouk
     - icon: fontawesome/solid/envelope
       link: mailto:bitmad@bitmad.co.uk
-
+  analytics:
+    provider: google
+    property: G-K79FGK7JXK
 
 
 
