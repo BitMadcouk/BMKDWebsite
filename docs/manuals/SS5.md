@@ -225,7 +225,7 @@ This new addition to SUPER SNAPSHOT is accessed as option 3 of the SUB-SYSTEM ME
 
 2) SPRITE KILLER Also built into SUPER SNAPSHOT is the ability to disable sprite collisions. To disable the sprites press the cartridge button and select option 2 from the GAME MASTER menu. Using the sprite disable commands you can kill (1) sprite to sprite collisions, (2) sprite to background collisions or (3) both. After a sprite command has been executed the message - DONE will appear. Pressing RETURN will take you back to the GAME MASTER menu. If the disabling was successful then the sprites will pass through one another allowing you to continue through the whole game without losing a life. Often, however, there will appear to be no effect from the sprite disabling. This is because what appeared to be sprites are actually user-defined characters or the programmer may be using some other method besides the VIC chip for detecting collisions.
 
-3) SPRITE RE-ENABLE We have also included a sprite reenable feature. This command will turn on all sprites that you had previously turned off. Once the command is executed the message DONE will appear and you
+3) SPRITE RE-ENABLE We have also included a sprite re-enable feature. This command will turn on all sprites that you had previously turned off. Once the command is executed the message DONE will appear and you
 will be returned to the GAME MASTER MENU.
 
 4) JOYSTICK AUTOFIRE Another handy utility is the autofire option. This feature was designed for those games that require continuous pressing of the fire button. Select 4 and when the process is complete you will be returned to the GAME MASTER MENU.
