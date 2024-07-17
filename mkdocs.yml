@@ -3,7 +3,13 @@ theme:
   name: material
   features:
     - navigation.expand
+  palette:
+    scheme: slate 
 copyright: Copyright &copy; 2024 BitMad
+
+
+
+
 
 nav:
   - Home: index.md
