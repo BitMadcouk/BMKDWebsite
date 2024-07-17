@@ -1,5 +1,6 @@
 # Super Snapshot 5 Manual
 
+## [Original File](Super_Snapshot_v5.0_Operating_Manual.pdf)
 ## Cover
 ![](ss5cover.png)
 
@@ -44,14 +45,14 @@ If, from the opening screen you selected F3 you will be presented with the DISK 
 Selecting option 1 will present you with our file copier menu. The file copier supports 1 or 2 drives (devices 8,9,10 and 11) and the drives can be 1541, 1571 or 1581, any combination. This means that you can, for example, copy files from a 1541 to a 1581, including partitions, or visa versa. All you have to do is select which will be source and which will be destination (by using the F1/F2 and E3/F4 keys). If one of the drives being used is a 1581, a second menu will appear allowing you to pick the source or destination directory. F5/F6 will allow you check the directories of the source and destination drives respectively. The copier detects which drive(s) it is working with and implements the appropriate transfer routine(s) automatically.We have not found any file copier that is as fast or as flexible as this one.
 
 
-**NOTE:** If you have a 1571 drive and you wish to make use of its increased storage capacity, you must first send a special command from basic BEFORE going to the copier system. The command is >UO>M1. This sets the 1571 into 1571 mode. Next you must send the disk format command (>N0:name,id). Now you are ready to go to the copier system. For further information on the 1571, see the section titled USING THE 1571 (section 13.0) which appears later in this manual.
+**NOTE:** If you have a 1571 drive and you wish to make use of its increased storage capacity, you must first send a special command from basic BEFORE going to the copier system. The command is >U0>M1. This sets the 1571 into 1571 mode. Next you must send the disk format command (>N0:name,id). Now you are ready to go to the copier system. For further information on the 1571, see the section titled USING THE 1571 (section 13.0) which appears later in this manual.
 
 
 Pressing F7 will take you to the FILE UTILITIES MENU. The first thing to note is the DEVICE line. This tells you which drive that you will be working with. The following is a summary of the options available on this screen.
 
 
 1. DIRECTORY - This will give you a directory listing of the current selected device (unit 8 is the default).
-2. SOFTWIRE DEVICE NUMBER - This command is for those ofyou who wish to use two drives for file copying but only have two unit 8's. To use this option turn on ONLYTHE DRIVE WHOSE NUMBER YOU WISH TO CHANGE.Press 2 and you will see the DEVICE number change from 8to 9. Your drive is now identified as unit 9. Now turn on your other drive. You now have units 8 and 9 to work with.
+2. SOFTWIRE DEVICE NUMBER - This command is for those ofyou who wish to use two drives for file copying but only have two unit 8's. To use this option turn on ONLY THE DRIVE WHOSE NUMBER YOU WISH TO CHANGE. Press 2 and you will see the DEVICE number change from 8 to 9. Your drive is now identified as unit 9. Now turn on your other drive. You now have units 8 and 9 to work with.
 3. RENAME FILES - Here is an easy way to change the name of any file(s). Press 3 and a directory of the current device will be given. Using the cursor keys and space bar, select the file(s) that you wish to rename. When all the desired files have been selected press return. The old name of the file(s) will be given and you simply type in the desired new name at the prompt.
 
  4. SCRATCH FILES - The scratch feature follows the format used in the RENAME FILES option. Use the cursor keys and space bar to select all files that you wish to delete. When the files have been selected press return.
@@ -78,7 +79,7 @@ selectingthisoptionyouwillbepresentedwiththediskcopiermenu. The disk copier supp
 
 (K) - DISK COMMAND This allows you to send any command to the specified drive. The desired drive is chosen using the F1/F2 key (see below). When you press K a ">" will appear at the bottom of the screen with the cursor flashing beside it. Just type the desired wedge symbol.
 
-(X)-EXIT Takes you from the DISK COPIER back to the opening menu of SUPER SNAPSHOT.
+(X) - EXIT Takes you from the DISK COPIER back to the opening menu of SUPER SNAPSHOT.
 
 F1/F2 - SOURCE DRIVE Selects the source drive.
 
@@ -96,7 +97,7 @@ Option three is the NIBBLER When you choose the nibbler option from the menu, SU
 
 SINGLE DRIVE VERSION:
 
-1)Starting Track No.:Press 1 to enter the changes. Defaults to 01 but any track number from 1 to 80 may be selected.
+1) Starting Track No.: Press 1 to enter the changes. Defaults to 01 but any track number from 1 to 80 may be selected.
 
 2) Ending Track No.: Press 2 to enter changes. Defaults to 35, but any track number from 1 to 80 may be selected. Please note that tracks 41-80 should only be programmed while using a 1571 formatted disk. This copy is made with out actually flipping the disk. Although you may select tracks 1-80, we suggest copying tracks 1-35 and then tracks 41-75. This will save time in most cases.
 
@@ -154,7 +155,7 @@ EXTENDED LIFE does work the majority of the time but not all of the time. For ex
 There are several ways of exiting the opening menu. F7 will exit to basic, leave the TURBO DOS active and perform an autoboot (see section 11.0 for information on the autoboot feature). F8 will exit to basic and turn off all of SUPER SNAPSHOTS features making it invisible. This means that TURBO DOS is turned off and all subsequent loads and saves will be at normalspeed. The DELETE key will take you to basic, leave TURBO DOS active, but will not perform an autoboot.
 
 ## 3.0 MAKING A BACKUP
-The archiver portion of SUPER SNAPSHOT (accessed as option 1 in the SU&SYSTEM MENU) is the most effective memory capture utility on the market (domestic or foreign). It will produce a working copy of any program that is entirely memory resident. Even many programs that load in files after the program has begun can be successfully backed up.
+The archiver portion of SUPER SNAPSHOT (accessed as option 1 in the SUB-SYSTEM MENU) is the most effective memory capture utility on the market (domestic or foreign). It will produce a working copy of any program that is entirely memory resident. Even many programs that load in files after the program has begun can be successfully backed up.
 
 ### 3.1 LIMITATIONS
 There are some programs that cannot be copied 100%. These programs include ones that are dongle (key) protected; do a protection check after the program has loaded and started and programs that use the drive's memory for protection or for alternate communication routines.
@@ -306,7 +307,7 @@ R - register display eg. R
 Display the contents of the various registers. These contents will represent the status at the time the program was interrupted.
 
 S - save a file eg. S "name",08,1000,2000 or SS "name",08,1000,2000  
-Saves a program called name which resided from memory location $1000 to $2000 to device 8. The second S isoptional and denotes as lowsave and is used for saving directly from the snapshot image under any ROM configuration.
+Saves a program called name which resided from memory location $1000 to $2000 to device 8. The second S is optional and denotes as lowsave and is used for saving directly from the snapshot image under any ROM configuration.
 
 SP - disable SPrite collisions eg. SP  
 Disables both sprite to sprite and sprite to background collisions.
@@ -451,7 +452,7 @@ A sound sample is a way of recording any sound as a series of numbers. It is the
 
 Whenever you hear a voice or a very realistic sound in a game, chances are itisasoundsample. Manyofthesesoundscanbecapturedforuseinyour own demo programs. You can even make music with them, plus simulate the sampled effects popular in dance music.
 
-When you suspect that this method is being used in your software, try to press the cartridge button when it is being played. Choose the MONITOR option from the SUB-SYSTEM MENU and then choose SAMPLE MONITOR Thereisnowayofautomaticallydetectingwherethesample is and what format it is in so you will have to help the program accomplish this. It is actually very easy and is done through experimentation with the different parameters. Chances are the settings will be similar to those shownsosimplypress'Ptolistenthroughtheentirememory. Ifyouhear the sound from the program at all, you are in luck! If not, you will have to experiment with the various fields. You can select the desired field by using the N (next field) and L (last field) keys.
+When you suspect that this method is being used in your software, try to press the cartridge button when it is being played. Choose the MONITOR option from the SUB-SYSTEM MENU and then choose SAMPLE MONITOR There is no way of automatically detecting where the sample is and what format it is in so you will have to help the program accomplish this. It is actually very easy and is done through experimentation with the different parameters. Chances are the settings will be similar to those shown so simply press'P to listen through the entire memory. If you hear the sound from the program at all, you are in luck! If not, you will have to experiment with the various fields. You can select the desired field by using the N (next field) and L (last field) keys.
 
 START ADDR and END ADDR - If there is a lot of noise before the sound is heard, you ha using the N and L keys. Adjust the value on the screen by using SHIFT/I (increase) or SHIFT/D (decrease) and then try playing it again. Continue adjusting until the sound starts to play immediately. If you can come dose to the starting address but are still getting a bit of noise at the beginning use I or D alone to fine tune the address. You can change the END ADDR (ending address) the same way. Now you have the sample cornered! If at any time you wish to stop the sound from playing, press A to abort
 
@@ -459,7 +460,7 @@ FREQUENCY - If at this point it sounds like a record player at very high or low 
 
 FINE DIR -The sound may still sound distorted, with a ringing tone in the background. If this is the case try changing the FINE DIR from + to - (or visa versa).
 
-COARSE DIR - If all this time it sounded like it may be something but wasn't quite recognizable, it may be playing backwards! Use the COARSE DIRsettingtofixthis(bypressingI). TheSTARTADDRandENDADDR will swap places because now you are playing from the end to the beginning.
+COARSE DIR - If all this time it sounded like it may be something but wasn't quite recognizable, it may be playing backwards! Use the COARSE DIR setting to fix this (by pressing I). The START ADDR and END ADDR will swap places because now you are playing from the end to the beginning.
 
 TYPE - If after all this you are still not getting anything, try changing the type from 1 bit to 4 bit. Now go through the process again and ifyou still don't get anything then try the 8 bit type selection.
 
@@ -467,7 +468,7 @@ These instructions were found to lead to the quickest road of success, but only 
 
 To save a lot of time you should be able to recognize the sample type fairly quick. To this end we have included samples of all formats on the SYSTEM DISK. These can form the basis ofyour sample collection.
 
-If you have been able to locate and isolate a sample, insert a blank disk and press S. The prompt FILENAME: will appear with the default SAMPLE given. You can change the default to any name that you wish up to 14 characterslong. The sample will be saved into two files with prefixes of D. and I. respectively. The first file contains the sample itself while the second contains the settings used. The D.file is not likely to be more than 202 blocks in size.
+If you have been able to locate and isolate a sample, insert a blank disk and press S. The prompt FILENAME: will appear with the default SAMPLE given. You can change the default to any name that you wish up to 14 characters long. The sample will be saved into two files with prefixes of D. and I. respectively. The first file contains the sample itself while the second contains the settings used. The D. file is not likely to be more than 202 blocks in size.
 
 As you can see, capturing a sample is quite fun but it also take some time. Things would be much better ifeveryone shared their findings with others. Leave a message on our BBS describing what kind of program your sample is from, the nature of the sound, the settings that you used and we will forward it to the other users and give you the full credit for the contribution. Remember...updates and special utilities are available for downloading.
 
