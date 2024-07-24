@@ -17,7 +17,8 @@ I actually started working on this article many weeks ago but kept on changing h
 I'll use the term C64 from now on as a blanket term. Obviously there are many ways to facilitate this, from real hardware, emulator, replicas, etc.
 I have settled on 3 main methods for now (with a 4th planned) :-
 
-Real Commodore C64c - My own machine, stock firmware, no mods. Custom PSU (DO NOT USE THE ORIGINAL - article coming soon to explain why).
+Real Commodore C64c - My own machine, stock firmware, no mods. Custom PSU [DO NOT USE THE ORIGINAL](C64MPU.md)
+
 [Kung Fu Flash cartridge](https://github.com/KimJorgensen/KungFuFlash) - Recently purchased. 
 [Pi1541](https://cbm-pi1541.firebaseapp.com/) - Bare PCB arrived this morning so will be built by the time this is published.
 
@@ -51,7 +52,7 @@ Documentation is another thing I've taken into account. I keep copies of these f
 
 C64 User Manual
 C64 Programmers Reference Manual
-Super Snapshot V5 manual
+[Super Snapshot V5 manual](/manuals/SS5.md)
 TMP Documentation
 
 This list will no doubt grow over time but it's what I consider the bare minimum for the time being. I did think about providing a zip file with everything included but quite honestly, these things are so easy to find that it's just not worth it. 

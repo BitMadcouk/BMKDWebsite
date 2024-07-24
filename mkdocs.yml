@@ -7,21 +7,16 @@ theme:
     scheme: slate 
 copyright: Copyright &copy; 2024 BitMad
 
-
-
-
-
 nav:
   - Home: index.md
   - Articles:
       - C64:
           - blog/C64intro.md
+          - blog/C64PSU.md
           - blog/C64ASMCLS.md
   - Documents:
       - manuals/index.md
       - manuals/SS5.md
-
-
 #      - subtopic:
 #          - blog/subtopic/boring_post.md
 #          - blog/subtopic/interesting_post.md
@@ -34,8 +29,6 @@ extra:
   analytics:
     provider: google
     property: G-K79FGK7JXK
-
-
 
 markdown_extensions:
   - pymdownx.critic
