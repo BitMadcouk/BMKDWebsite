@@ -13,7 +13,7 @@ nav:
       - C64:
           - blog/C64intro.md
           - blog/C64PSU.md
-          - blog/C64ASMCLS.md
+          - blog/C64ASMCLS.mdx
   - Documents:
       - manuals/index.md
       - manuals/SS5.md
