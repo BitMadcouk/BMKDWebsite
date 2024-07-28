@@ -1,6 +1,7 @@
 site_name: BitMad
 theme:
   name: material
+  logo: assets/bmlogo.png
   features:
     - navigation.expand
   palette:
