@@ -17,7 +17,7 @@ I actually started working on this article many weeks ago but kept on changing h
 I'll use the term C64 from now on as a blanket term. Obviously there are many ways to facilitate this, from real hardware, emulator, replicas, etc.
 I have settled on 3 main methods for now (with a 4th planned) :-
 
-Real Commodore C64c - My own machine, stock firmware, no mods. Custom PSU [DO NOT USE THE ORIGINAL](C64MPU.md)
+Real Commodore C64c - My own machine, stock firmware, no mods. Custom PSU [DO NOT USE THE ORIGINAL](C64PSU.md)
 
 [Kung Fu Flash cartridge](https://github.com/KimJorgensen/KungFuFlash) - Recently purchased. 
 [Pi1541](https://cbm-pi1541.firebaseapp.com/) - Bare PCB arrived this morning so will be built by the time this is published.
