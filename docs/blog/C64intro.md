@@ -10,7 +10,7 @@ Regardless, I still love the humble C64 and have decided that the 30 years since
 There are so many great tools available these days for writing C64 code that you could be up and running at no cost in around 5-10 mins. IDEs, cross compilers, debuggers, everything you can think of is out there and can be used but for now, I'm going to use the "real" thing.
 By that I mean either a real C64 or an emulator, not a PC based development tool.
 
-The reason for this is because I feel that by using the C64 directly, I'll gain a better understanding of the machine. 
+The reason for this is because I feel that by using the C64 directly, I'll gain a better understanding of the machine.
 
 I actually started working on this article many weeks ago but kept on changing how I did things and then having to re-write parts. This is probably better for anyone wanting to follow along because at least now I have a fixed set of methods and tools whereas previously I would have been flicking between different applications.
 
@@ -19,7 +19,7 @@ I have settled on 3 main methods for now (with a 4th planned) :-
 
 Real Commodore C64c - My own machine, stock firmware, no mods. Custom PSU [DO NOT USE THE ORIGINAL](C64PSU.md)
 
-[Kung Fu Flash cartridge](https://github.com/KimJorgensen/KungFuFlash) - Recently purchased. 
+[Kung Fu Flash cartridge](https://github.com/KimJorgensen/KungFuFlash) - Recently purchased.
 [Pi1541](https://cbm-pi1541.firebaseapp.com/) - Bare PCB arrived this morning so will be built by the time this is published.
 
 [MiSTer FPGA](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki) - I've had this for a few years now and absolutely love it. Expect some articles in the near future about it.
@@ -52,7 +52,7 @@ Documentation is another thing I've taken into account. I keep copies of these f
 
 C64 User Manual
 C64 Programmers Reference Manual
-[Super Snapshot V5 manual](/manuals/SS5.md)
+[Super Snapshot V5 manual](/docs/manuals/SS5.md)
 TMP Documentation
 
 This list will no doubt grow over time but it's what I consider the bare minimum for the time being. I did think about providing a zip file with everything included but quite honestly, these things are so easy to find that it's just not worth it. 
@@ -65,4 +65,3 @@ Obviously this is just my choice and you are free to substitute any of the above
 Many people nowadays use JiffyDOS / DolphinDOS or their own choice of utility cartridge. That is fine as most of what I will be covering will transfer between different methods.
 
 To each their own and may their C64 journey be eventful.
-
