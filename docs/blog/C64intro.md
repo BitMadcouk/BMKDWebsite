@@ -50,10 +50,10 @@ Blank disks. I always keep a blank.d64 file handy and make copies when I need ne
 
 Documentation is another thing I've taken into account. I keep copies of these files with me while working with the C64 :-
 
-C64 User Manual
-C64 Programmers Reference Manual
-[Super Snapshot V5 manual](/docs/manuals/SS5.md)
-TMP Documentation
+C64 User Manual  
+C64 Programmers Reference Manual  
+[Super Snapshot V5 manual](/docs/manuals/SS5.md)  
+TMP Documentation  
 
 This list will no doubt grow over time but it's what I consider the bare minimum for the time being. I did think about providing a zip file with everything included but quite honestly, these things are so easy to find that it's just not worth it. 
 
