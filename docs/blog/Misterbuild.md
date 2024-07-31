@@ -35,7 +35,7 @@ Your icon next to the MiSTer lettering at the top might look different depending
 
 As you can see from the image, there are no files therefore nothing to do. Boo. Let's fix that but first, if you're not a fan of the static (though moving...) background, press the F1 key to cycle through several included images. (This will explain why the following screen shots have a different background)
 
-At this point we need to connect to a network. I'm using a wired connection but I'll show you how to connect to wifi too.
+Now we need to connect to a network. I'm using a wired connection but I'll show you how to connect to wifi too.
 
 If you plug in a cable, you'll notice a new icon next to the RAM icon to signal that you're connected to the network. If you're going wifi don't worry, follow the next couple of steps.
 
@@ -61,10 +61,21 @@ After updating, the MiSTer will reboot again but this time you'll be presented w
 
 This is the main interface. From here you can select which system you wish to run. Keep in mind that there are no roms etc just yet so while you can run something like a C64, you can't do much with it.
 
-We'll put our roms directly onto the SD card. Obviously the amount of roms you can fit depends on the SD card size but for now, put enough on there to keep yourself, your family and friends happy and I will cover how to use external hard drives in an upcoming article because that's how I prefer to run my MiSTer anyway.
+We have several options for rom storage. We can use the SD card to hold our roms / VHDs etc which is perfectly fine. If you don't have a huge SD card there are other options. One way is to host the files on a network share and connect to it from the MiSTer (Guide coming shortly). The method I use is to store everything on an external SSD drive connected via USB.
+
+I'll show how to use SD and / or eternal drive now and then cover network shares in a later article.
+
+Power off the MiSTer and eject the SD card then pop it into your computer and open it up.
+On the root of the drive is a folder called "games". Inside this folder is a subfolder for each core. The names are fairly self explanatory but you can refer to the wiki for more information.
+
+If you're copying the files onto SD card, this is where they need to go. Copy the roms you want into the correct folders. Once the roms are on the SD card. Re-insert it into the MiSTer and power up.
+
+If you've opted for external storage, you'll need to format it to FAT32. Once formatted, copy the games folder from the SD card onto the root of the hard drive to ensure that the subfolder names remain correct. You can now copy your roms into their respective folders.
+
+Now re-insert the SD card and connect the USB drive before powering on the MiSTer.
+
+Select a core from the menu and then press Enter to run it. Depending on which core you ran depends on whether you see anything on screen or not. Press F12 to bring up the core menu and from there you can select a rom, floppy image etc.
 
 It's time now for you to explore the system and the ecosystem surrounding it. The [MiSTer FPGA wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki) has good documentation and there are a squillion Youtube videos covering every aspect so you won't get bored.
-
-Future articles will delve further into the main setup as well as some of the cores themselves.
 
 Until then, enjoy playing with your....erm.... Mr?
