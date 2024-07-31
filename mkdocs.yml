@@ -15,6 +15,8 @@ nav:
           - blog/C64intro.md
           - blog/C64PSU.md
           - blog/C64ASMCLS.md
+      - MiSTer FPGA:
+          - blog/Misterbuild.md    
   - Documents:
       - manuals/index.md
       - manuals/SS5.md

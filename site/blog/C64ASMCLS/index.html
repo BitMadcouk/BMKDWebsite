@@ -12,7 +12,7 @@
         <link rel="prev" href="../C64PSU/">
       
       
-        <link rel="next" href="../../manuals/">
+        <link rel="next" href="../Misterbuild/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -375,6 +375,72 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    MiSTer FPGA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            MiSTer FPGA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Misterbuild/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MiSTer FPGA - Initial Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -502,10 +568,10 @@
 
 
 <h1 id="c64-asm-clearing-the-screen">C64 ASM Clearing the screen</h1>
-<p>Clearing the screen is one of those things that is so trivial on the C64 that you can do it by pressing Shift + CLR or in basic by typing :- </p>
+<p>Clearing the screen is one of those things that is so trivial on the C64 that you can do it by pressing Shift + CLR or in basic by typing :-</p>
 <pre><code>PRINT CHR$(147)
 </code></pre>
-<p>It's not much more difficult to do it in assembly either thanks to the <a href="https://www.pagetable.com/c64ref/kernal/">built in kernel routines</a> of the C64.</p>
+<p>It's not much more difficult to do it in assembly either thanks to the <a href="https://www.pagetable.com/c64ref/kernal/">built in kernal routines</a> of the C64.</p>
 <p>I'll show you how to clear the screen that way and then I'll show you another method which doesn't rely on the built in routines.</p>
 <p>Why wouldn't we always use the built in ones? They're BUILT IN! That's kind of the point of them right? No extra cost, no extra effort.</p>
 <p>Well, they're actually the BASIC routines that we're simply calling directly from assembly. If we have to overwrite basic in memory, we won't be able to use them anymore. (Need to confirm this. I'm sure there is a reason why you can't always use kernal routines.... but I could be wrong)</p>
@@ -538,15 +604,14 @@ rts             ;ReTurn from Subroutine (End)
 <p>*=$1000 tells the assembler where to place our assembled code.
 This is our programs entry point.</p>
 <p>ldx #$00 loads 0 directly into the x register</p>
-<p>lda #$20 loads the hex number 20 into the a register. $20 happens to be the character 
-code for the space character. We're going to write this "character" into every memory address for the screen to wipe it.</p>
+<p>lda #$20 loads the hex number 20 into the a register. $20 happens to be the character code for the space character. We're going to write this "character" into every memory address for the screen to wipe it.</p>
 <p>loop - a label to show the start of our loop. We can call this anything.</p>
 <p>sta $0400,x This is the first line we'll use to write to the screen. $0400 is the memory address for the top left corner of the screen. The ",x" after the memory address tells the computer to add the value of the x register to the $0400 number.
 On the first run, x is 0 so the data ($20) is written to memory location $0400 + 0. As the program loops, x will have 1 added to it so will continue to increase until it rolls back to 0.</p>
 <p>The next few lines do the same function but at different screen locations (I will explain later).</p>
 <p>inx - increment x, Add 1 to whatever is in the x register.</p>
 <p>bne loop - While x doesn't equal 0, go back to the loop.</p>
-<p>rts ends the program. </p>
+<p>rts ends the program.</p>
 <p>The C64 screen is 1000 characters in size but our loop only allows us to count to 255 before it flips back to zero.</p>
 <p>This is why we have those 4 similar lines, each one points to the screen location 255 bytes after the first.</p>
 <p>If we were to slow the C64 down enough, we would see that our program writes 4 characters to the screen each time it loops until 4 sets of 255 characters have been written.</p>
