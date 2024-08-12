@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../C64ASMCLS/">
       
       
-        <link rel="next" href="../C64PSU/">
+        <link rel="next" href="../Misterbuild/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>BitMad about.... Commodore 64 - BitMad</title>
+        <title>Change TMP colours on Snappyrom - BitMad</title>
       
     
     
@@ -79,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#change-tmp-colours-on-snappyrom" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -110,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BitMad about.... Commodore 64
+              Change TMP colours on Snappyrom
             
           </span>
         </div>
@@ -293,17 +298,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../C64intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -312,7 +310,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -364,10 +361,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../snappytmp/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -376,6 +382,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -565,6 +572,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -579,58 +588,28 @@
                   
 
 
-  <h1>BitMad about.... Commodore 64</h1>
-
-<p>Growing up, I had a Commodore 64 (after a Dragon 32 and ZX Spectrum) and to this day it remains my favourite computer. That may be because I never had an Atari ST or Amiga back then so never knew what I was missing out on.
-Regardless, I still love the humble C64 and have decided that the 30 years since I last used the machine is quite long enough and I should try to learn all the stuff I wasn't clever enough to understand back then…..not that I’m any more intelligent now mind.</p>
-<p>There are so many great tools available these days for writing C64 code that you could be up and running at no cost in around 5-10 mins. IDEs, cross compilers, debuggers, everything you can think of is out there and can be used but for now, I'm going to use the "real" thing.
-By that I mean either a real C64 or an emulator, not a PC based development tool.</p>
-<p>The reason for this is because I feel that by using the C64 directly, I'll gain a better understanding of the machine.</p>
-<p>I actually started working on this article many weeks ago but kept on changing how I did things and then having to re-write parts. This is probably better for anyone wanting to follow along because at least now I have a fixed set of methods and tools whereas previously I would have been flicking between different applications.</p>
-<p>I'll use the term C64 from now on as a blanket term. Obviously there are many ways to facilitate this, from real hardware, emulator, replicas, etc.
-I have settled on 3 main methods for now (with a 4th planned) :-</p>
-<p>Real Commodore C64c - My own machine, stock firmware, no mods. Custom PSU <a href="../C64PSU/">DO NOT USE THE ORIGINAL</a></p>
-<p><a href="https://github.com/KimJorgensen/KungFuFlash">Kung Fu Flash cartridge</a> - Recently purchased.
-<a href="https://cbm-pi1541.firebaseapp.com/">Pi1541</a> - Bare PCB arrived this morning so will be built by the time this is published.</p>
-<p><a href="https://github.com/MiSTer-devel/Wiki_MiSTer/wiki">MiSTer FPGA</a> - I've had this for a few years now and absolutely love it. Expect some articles in the near future about it.
-The C64 core on the MiSTer is simply amazing. Great accuracy and the framework features add so many quality of life improvements while working with C64 media.</p>
-<p>Emulator - I tend to use <a href="https://vice-emu.sourceforge.io/">Vice</a> or <a href="https://sourceforge.net/projects/deniseemu/">Denise</a> when using an emulator. Both are great and they're to hand on my laptop when I'm out and about or want to lay on the sofa and code.</p>
-<p>The C64 Maxi - I'm thinking of ordering one of these mainly for the keyboard.
-When using the MiSTer or an emulator, I use a Corsair K65 and have put stickers on some keycaps to identify special keys. I'd likely use the Maxi most of all because it blends the keyboard with the QOL improvements of emulation.</p>
-<p>Ok, on with the show.
-If I were writing this back in the 80s or 90s on real hardware, I'd probably have to choose software that most users already had or include a listing for it.
-I'm not. It's 2023 and emulators are filled to the brim with all the hardware you could wish for. The internet is awash with any software package you could imagine and you can find pretty much any information you desire either via web search or by downloading old C64 books.
-Life is just god damn peachy!</p>
-<p>Having owned an Action Replay mk6 cartridge back in the day, this was my first choice of utility cartridge. It was never unplugged from my machine in the 90s and it's always mounted when I run emulation.
-This time, it's different. For reasons that I will explain in a different article, I've opted for the Super Snapshot V5 cartridge.</p>
-<p>Regarding software, I've played with several different options but ultimately settled on <a href="https://style64.org/release/turbo-macro-pro-sep06-style">Turbo Macro Pro</a> (TMP).
-Initially I was put off by the menu system. From the few YouTube videos that I saw, it looked to me like I'd have to learn complicated shortcuts and command which I didn't fancy.
-Then I put my big boy pants on, looked at the docs and got stuck in.</p>
-<p>I did spend some time using Mikro Assembler by Supersoft and got on really well with it.
-I just found that TMP helped me to keep my code more organised.
-I had a quick look at the PAL assembler too but decided against it.</p>
-<p>Blank disks. I always keep a blank.d64 file handy and make copies when I need new disks. Some emulators have a feature to create a new blank disk and insert it which is nice. MiSTer doesn’t have this feature hence the files.</p>
-<p>Documentation is another thing I've taken into account. I keep copies of these files with me while working with the C64 :-</p>
-<p>C64 User Manual<br />
-C64 Programmers Reference Manual<br />
-<a href="/docs/manuals/SS5.md">Super Snapshot V5 manual</a><br />
-TMP Documentation  </p>
-<p>This list will no doubt grow over time but it's what I consider the bare minimum for the time being. I did think about providing a zip file with everything included but quite honestly, these things are so easy to find that it's just not worth it.</p>
-<p>Most software / documentation can be found here :-\
-<a href="https://csdb.dk/">CSDB</a>\
-<a href="https://archive.org/">Internet Archive</a>\</p>
-<p>Obviously this is just my choice and you are free to substitute any of the above should you choose to follow along.
-Many people nowadays use JiffyDOS / DolphinDOS or their own choice of utility cartridge. That is fine as most of what I will be covering will transfer between different methods.</p>
-<p>To each their own and may their C64 journey be eventful.</p>
+<h1 id="change-tmp-colours-on-snappyrom">Change TMP colours on Snappyrom</h1>
+<p>I like using <a href="https://turbo.style64.org/">Turbo Macro Pro</a> (TMP) on the C64. The installer disk has a little utility that lets you change the colours of the editor screen to any of your choosing. I like setting my colours too.</p>
+<p><a href="https://github.com/adrianglz64/snappyrom">Snappyrom</a> has TMP built in to the cartridge and although you might not think loading from disk is too bad (which it isn't), loading instantly from cartridge is even better!</p>
+<p>My only minor niggle with the Snappyrom version is that the colours are set to default and while there's nothing wrong with them, I'd prefer to use my colours if possible. You can change them within the software but you have to either save the preferences to a disk or set them every time you boot.
+Neither option appeals to me.</p>
+<p>This should be pretty straight forward. The quickest way to find which bytes need changing is to open up my customised TMP version in a hex editor and compare it against the vanilla version on the TMP disk.</p>
+<p>I used <a href="https://style64.org/dirmaster">C64 Dirmaster</a> to extract the files from the floppy images and then opened them in <a href="https://mh-nexus.de/en/hxd/">HxD</a>. From the Analysis toolbar, I ran a compare which showed me three differences.</p>
+<p><img alt="bytesfound" src="/assets/bytesfound.png" /></p>
+<p>These must be the options I set initially which I <em>think</em> were background, border and text colour.</p>
+<p>Now I'll open up the snappyrom file in the hex editor and do a quick search for "TMP 1.2" as that text string was near the bytes we're looking to change. That brings me to where I need to be and now I can change the bytes accordingly. I've chosen to stick with the same colours but it's easy to pick your own.</p>
+<p>This is the point where I wanted to insert a screenshot to show the changes but it seems to have walked off. I may re-take it later but honestly it's just like the one above....</p>
+<p>With that done, it's time to save the changes to a new file and boot the cart up to see if it worked.</p>
+<p>I had the MiSTer next to me so chose that for testing and I am very happy to say that it worked perfectly.</p>
+<p><img alt="proof" src="/assets/bmtmp.png" /></p>
+<p>I'm really happy with the results and this will be my go-to cartridge version from now on.</p>
+<p>You can download a copy of my modified version <a href="/assets/bmsnappy.crt">here</a> if you wish or you could go out and do your own custom version.</p>
 
 
 
 
 
 
-
-  
-  
 
 
 

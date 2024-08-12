@@ -38,7 +38,7 @@ Life is just god damn peachy!
 Having owned an Action Replay mk6 cartridge back in the day, this was my first choice of utility cartridge. It was never unplugged from my machine in the 90s and it's always mounted when I run emulation.
 This time, it's different. For reasons that I will explain in a different article, I've opted for the Super Snapshot V5 cartridge.
 
-Regarding software, I've played with several different options but ultimately settled on Turbo Macro Pro (TMP).
+Regarding software, I've played with several different options but ultimately settled on [Turbo Macro Pro](https://style64.org/release/turbo-macro-pro-sep06-style) (TMP).
 Initially I was put off by the menu system. From the few YouTube videos that I saw, it looked to me like I'd have to learn complicated shortcuts and command which I didn't fancy.
 Then I put my big boy pants on, looked at the docs and got stuck in.
 
@@ -55,7 +55,7 @@ C64 Programmers Reference Manual
 [Super Snapshot V5 manual](/docs/manuals/SS5.md)  
 TMP Documentation  
 
-This list will no doubt grow over time but it's what I consider the bare minimum for the time being. I did think about providing a zip file with everything included but quite honestly, these things are so easy to find that it's just not worth it. 
+This list will no doubt grow over time but it's what I consider the bare minimum for the time being. I did think about providing a zip file with everything included but quite honestly, these things are so easy to find that it's just not worth it.
 
 Most software / documentation can be found here :-\
 [CSDB](https://csdb.dk/)\
