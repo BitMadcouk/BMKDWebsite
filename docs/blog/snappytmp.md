@@ -16,6 +16,8 @@ I used [C64 Dirmaster](https://style64.org/dirmaster) to extract the files from 
 
 These must be the options I set initially which I *think* were background, border and text colour.
 
+The colours I opted for initially were yellow text on a blue background. This may lead you to think I'm an Amstrad CPC fan or that I'm exercising my political views.... neither would be correct. I went to college in the 90s and we used Borland Turbo C. It had yellow on blue and I found it comfortable to use so why not stick with it eh?
+
 Now I'll open up the snappyrom file in the hex editor and do a quick search for "TMP 1.2" as that text string was near the bytes we're looking to change. That brings me to where I need to be and now I can change the bytes accordingly. I've chosen to stick with the same colours but it's easy to pick your own.
 
 This is the point where I wanted to insert a screenshot to show the changes but it seems to have walked off. I may re-take it later but honestly it's just like the one above....
