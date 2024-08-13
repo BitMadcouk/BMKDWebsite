@@ -26,6 +26,8 @@ nav:
 #          - blog/subtopic/interesting_post.md
 extra:
   social:
+    - icon: fontawesome/brands/reddit-alien
+      link: https://www.reddit.com/user/BitMadcouk/
     - icon: fontawesome/brands/github
       link: https://github.com/BitMadcouk
     - icon: fontawesome/solid/envelope
