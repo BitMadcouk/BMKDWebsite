@@ -85,7 +85,7 @@ A resounding success! Both disks booted however the Midnight Resistance disk nee
 
 ![RoboCop Loaded](robocoploaded.png)
 ![Midnight Resistance Loaded](mrloaded.png)
-Ignore the state of my poor old Amiga. it's filthy and needs a good refurb but that will happen at a later date. Ahe works and that's the main thing.
+Ignore the state of my poor old Amiga. It's filthy and needs a good refurb but that will happen at a later date. She works and that's the main thing.
 
 ## Conclusion
 
