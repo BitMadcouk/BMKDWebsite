@@ -11,6 +11,7 @@ copyright: Copyright &copy; 2024 BitMad
 nav:
   - Home: index.md
   - Articles:
+      - blog/greaseweazle.md
       - C64:
           - blog/C64intro.md
           - blog/C64PSU.md
