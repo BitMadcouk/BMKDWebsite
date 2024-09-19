@@ -74,3 +74,9 @@ This is why we have those 4 similar lines, each one points to the screen locatio
 If we were to slow the C64 down enough, we would see that our program writes 4 characters to the screen each time it loops until 4 sets of 255 characters have been written.
 
 I hope that someone finds this useful and please get in touch if I have made any mistakes.
+
+One thing to bear in mind with this routine is that it only clears the characters on the screen but leaves the colour data behind. This can cause some odd behavior occasionally so it's also worth clearing the colour memory at the same time. 
+
+I'll leave this as an exercise for you, dear reader. With the information presented in this guide, it should be fairly easy to research and implement.
+
+For those of you who don't want to figure it out or are unable to, check back at a later date for the solution.
