@@ -2,6 +2,7 @@ site_name: BitMad
 theme:
   name: material
   logo: assets/bmlogo.png
+  favicon: assets/favicon.ico
   features:
     - navigation.expand
   palette:
