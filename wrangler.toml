@@ -1,0 +1,5 @@
+[site]
+bucket = "./site" 
+
+mkdocs build
+wrangler publish
